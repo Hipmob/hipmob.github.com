@@ -1,10 +1,20 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-	  "http://www.w3.org/TR/html4/loose.dtd">
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>{% if page.title %} {{ page.title }} | {% endif %} - Engineering @ Hipmob</title>
-    <link rel="stylesheet" href="{{site.baseurl}}/style.css" />
+    <meta charset="utf-8">
+    <title>{% if page.title %} {{ page.title }} {% endif %} | Engineering @ Hipmob</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Styles -->
+    <link href="{{site.baseurl}}/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="{{site.baseurl}}/assets/css/prettify.css" rel="stylesheet">
+    <link href="{{site.baseurl}}/assets/css/screen.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/sh/styles/shCore.css" />
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/sh/styles/shThemeDefault.css" />
+    <!-- Meta -->
+    <meta http-equiv="content-type" content="text/xhtml; charset=utf-8" /
+
     <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="{{site.baseurl}}/feed.xml" />
     <script type="text/javascript">
       var _gaq = _gaq || [];
@@ -17,35 +27,110 @@
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
     </script>
+    
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
-  <body>
-    <div id="header">
-      <h1>Welcome to my page</h1>
-      <h4>Here is some tagline</h4>
-      <hr />
+  <body class="pbg">
+    <header id="overview" class="mainheader">
+      <div class="container">
+	<div class="row">
+	  <div class="span8">
+	    <h1><img src="{{site.baseurl}}/assets/img/logo.png" style="margin-right: 10px"/><a href="https://www.hipmob.com/">Hipmob</a></h1>
+	    <p class="lead"><a href="{{site.url}}">Engineering Blog</a></p>
+	  </div>
+	  <div class="span4">
+	  </div>
+	</div>
+    </header>
+    <div class="container" id="contentblock">
+      <div class="row">
+	<div class="span9">
+	  {{ content }}
+	</div>
+	<div class="span3 sidebar">
+	  <div class="sidebarblock">
+	    <h5 class="desc">Live chat anywhere: desktop or mobile.</h5><br />
+	    Keep your users on your desktop or mobile website, and in your iPhone/iPad or Android app.<br /><br />
+	    iOS/Android native libraries, customizable to match your application's user interface.<br /><br />
+	    Send text, picture and audio messages.<br /><br />
+	    Learn more @ <a href="http://www.hipmob.com/">Hipmob.com</a>
+	    <div class="sidebardivider"></div>
+	    <div style="padding-top:5px;">
+              <a href="https://twitter.com/hipmob" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @hipmob</a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	    </div>
+	  </div>
+	</div>
+      </div>
     </div>
-    <div id="sidebar">
-      <h3>First Heading</h3>
-      <ul>
-        <li><a href="{{site.baseurl}}/">Home</a></li>
-        <li><a href="{{site.baseurl}}/archive">Archive</a></li>
-        <li><a href="{{site.baseurl}}/feed.xml">RSS Feed</a></li>
-      </ul>
-      <h3>Second Heading</h3>
-      <ul>
-	<li><a href="#">Link 1</a></li>
-	<li><a href="#">Link 2</a></li>
-	<li><a href="#">Link 3</a></li>
-      </ul>
+    <div class="container" style="margin-top: 30px">
+      <div class="row">
+	<div class="offset12 span3"><small>&copy; 2012 Orthogonal Labs, Inc.</small></div>
+      </div>
     </div>
-    <div id="content">
-      {{ content }}
-    </div>
-    <div id="footer">
-      <hr />
-      <p>&copy; 2012 Orthogonal Labs, Inc.</p>
-    </div>
+    
+    <footer class="footer" style="background-color:#4cbd50; box-shadow: inset 1px 1px 1px #888888; margin-top:30px;">
+      <div class="navbar-static-bottom" style="margin-bottom:-18px; height:220px; ">
+        <div class="container">
+          <div class="row" style="margin-top:15px;">
+            <div class="span3 footerspan" >
+              <h4>About Hipmob</h4> <br />
+              <a class="listtext" href="//manage.hipmob.com/register/">Sign Up</a> <br />
+              <a class="listtext" href="//www.hipmob.com/pricing.html">Pricing</a> <br />
+              <a class="listtext" href="//blog.hipmob.com">Blog</a> <br />
+              <a class="listtext" href="//www.hipmob.com/pricing.html#faq">FAQ</a> <br />
+              <a class="listtext" href="//www.hipmob.com/gallery.html">Gallery</a> <br />
+              <a class="listtext" href="//www.hipmob.com/privacy.html">Privacy</a> <br />
+            </div>
+            <div class="span3 footerspan">
+              <h4>Developers</h4><br />
+              <a class="listtext" href="//www.hipmob.com/documentation/ios.html">iPhone SDK</a> <br />
+              <a class="listtext" href="//www.hipmob.com/documentation/ios.html#fifteenminuteipad">iPad SDK</a> <br />
+              <a class="listtext" href="//www.hipmob.com/documentation/android.html">Android SDK </a> <br />
+              <a class="listtext" href="//www.hipmob.com/documentation/peer-to-peer.html">Peer to Peer SDK</a> <br />
+              <a class="listtext" href="//www.hipmob.com/documentation/api.html"> REST API</a> <br />
+              <a class="listtext" href="//www.hipmob.com/documentation/chat-events.html">Webhooks</a> <br />
+            </div>
+            <div class="span3 footerspan">
+              <h4>Integrations</h4><br />
+              <a class="listtext" href="//www.hipmob.com/documentation/integrations/desk">Desk </a> <br />
+              <a class="listtext" href="//www.hipmob.com/documentation/integrations/zendesk.html">Zendesk</a> <br />
+              <a class="listtext" href="//www.hipmob.com/documentation/integrations/hipchat.html">Hipchat</a> <br />
+              <a class="listtext" href="//www.hipmob.com/documentation/integrations/campfire.html">Campfire</a> <br />
+              <a class="listtext" href="//www.hipmob.com/documentation/integrations/salesforce.html">Salesforce CRM</a> <br />
+              <a class="listtext" href="//www.hipmob.com/documentation/integrations/highrise.html">Highrise CRM</a> <br />
+              <a class="listtext" href="//www.hipmob.com/documentation/integrations/zohocrm.html">Zoho CRM</a> <br />
+            </div>
+            <div class="span3 " >
+              <h4> Contact Us: </h4>
+              <div class="rounded5" style=" background-color: #138c17;">
+                <h6 style="margin:25px;" class="listtext">
+                  team@hipmob.com <br />
+                  (650) 762-6513 <br />
+                  An Orthogonal Labs Production<br />
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{{site.baseurl}}/assets/js/jquery.min.js"></script>
+    <script src="{{site.baseurl}}/assets/js/bootstrap.js"></script>
+    <script src="{{site.baseurl}}/assets/js/prettify.js"></script>
+    <script src="{{site.baseurl}}/assets/js/vkbeautify.js"></script>
+    <script src="{{site.baseurl}}/assets/sh/scripts/shCore.js"></script>
+    <script src="{{site.baseurl}}/assets/sh/scripts/shAutoloader.js"></script>
+    <script src="{{site.baseurl}}/assets/js/hm.js"></script>
+    <script type="text/javascript">
+      jQuery(function(){ hm.setup('{{site.baseurl}}') });
+    </script>
   </body>
-
 </html>

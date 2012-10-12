@@ -1,8 +1,0 @@
----
-layout: post
-title: Welcome from Engineering @ Hipmob
-
-excerpt: Getting setup right now: check back in a few hours for our first actually interesting post.
----
- 
-Getting setup right now: check back in a few hours for our first actually interesting post.

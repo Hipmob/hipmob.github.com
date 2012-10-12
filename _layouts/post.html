@@ -1,9 +1,9 @@
 ---
 layout: default
 ---
-<div class="post">
-  <h2>{{ page.title }}</h2>
-  <span class="date">{{ page.date | date_to_string }}</span>
+<div class="postcontent">
+  <h3 class="title">{{ page.title }}</h3>
+  <div class="postinfo">By {{page.author}} | {{ page.releasedate }}</div>
   <div class="entry">{{ content }}</div>
   <span class="meta"></span>
 </div>

@@ -13,7 +13,7 @@ description: Hipmob Engineering's blog.
 url: http://engineering.hipmob.com/
 
 # Continue compiling even if there are errors. Keep it true, unless troubleshooting.
-auto: true
+# auto: true
 
 # Makes pretty permalinks. See Jekyll docs for alternatives.
 permalink: pretty
