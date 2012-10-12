@@ -6,43 +6,44 @@
     <title>{% if page.title %} {{ page.title }} | {% endif %} - Engineering @ Hipmob</title>
     <link rel="stylesheet" href="{{site.baseurl}}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="{{site.baseurl}}/feed.xml" />
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-35392546-1']);
+      _gaq.push(['_trackPageview']);
+      
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
   </head>
-
   <body>
     <div id="header">
       <h1>Welcome to my page</h1>
       <h4>Here is some tagline</h4>
       <hr />
     </div>
-
     <div id="sidebar">
-
       <h3>First Heading</h3>
-
       <ul>
         <li><a href="{{site.baseurl}}/">Home</a></li>
         <li><a href="{{site.baseurl}}/archive">Archive</a></li>
         <li><a href="{{site.baseurl}}/feed.xml">RSS Feed</a></li>
       </ul>
-
       <h3>Second Heading</h3>
-
       <ul>
 	<li><a href="#">Link 1</a></li>
 	<li><a href="#">Link 2</a></li>
 	<li><a href="#">Link 3</a></li>
       </ul>
     </div>
-
     <div id="content">
-
       {{ content }}
-
     </div>
-
     <div id="footer">
       <hr />
-      <p>&copy; 2012 Luke Maciak</p>
+      <p>&copy; 2012 Orthogonal Labs, Inc.</p>
     </div>
 
   </body>
