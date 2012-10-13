@@ -1492,3 +1492,5 @@ navbar section
 .navbar .nav > li > a.snugdd {
     margin-left: -15px; padding-left: 5px; !important
 }
+
+.syntaxhighlighter { padding-bottom: 1px; }
