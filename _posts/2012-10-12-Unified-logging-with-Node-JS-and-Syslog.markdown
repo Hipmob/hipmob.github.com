@@ -4,7 +4,7 @@ title: "Unified logging with Node JS and Syslog"
 excerpt: "Heroku's log drains let you see all your log events from multiple Heroku applications in a single stream: why not extend the same love to the rest of your (non-Heroku) infrastructure? We discuss how we built and setup a Node JS server to stream log files to the same server as our Heroku logs, significantly simplifying our debugging tasks."
 author: "Femi Omojola"
 releasedate: "October 13, 2012"
-pagename: engineering.unifiedloggingwithnodejsandsyslog
+pagename: unifiedloggingwithnodejsandsyslog
 --- 
 Here at [Hipmob](https://www.hipmob.com "Hipmob"), we use [Heroku](http://heroku.com "Heroku") for a number of different parts of our communication network. Using multiple loosely-coupled services simplifies scaling (which is handy when trying to provide [live chat as a service to mobile apps](https://www.hipmob.com/documentation/)), but (as with any distributed system with many moving parts) sometimes debugging can be a little challenging. Recently while trying to debug a customer issue we needed to be able to follow some data as it moved from our API service (implemented in NodeJS and deployed on Heroku) through our chat service (implemented in NodeJS and deployed on our own EC2 servers: [Heroku, pretty please add Websocket support soon!](https://devcenter.heroku.com/articles/http-routing#websockets)) and then to our management service (implemented in Python and deployed on Heroku). After scuffling with multiple shell sessions and trying to visually synchronize our logging statements we decided it was finally time to actually investigate centralized logging.  
 

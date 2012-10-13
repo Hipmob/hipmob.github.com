@@ -66,8 +66,8 @@
 	</div>
 	<div class="span3 sidebar">
 	  <div class="sidebarblock">
-	    <h5 class="desc">Live chat anywhere: desktop or mobile.</h5><br />
-	    Keep your users on your desktop or mobile website, and in your iPhone/iPad or Android app.<br /><br />
+	    <h5 class="desc">Live chat on mobile.</h5><br />
+	    Keep your users on your mobile website, and in your iPhone/iPad or Android app.<br /><br />
 	    iOS/Android native libraries, customizable to match your application's user interface.<br /><br />
 	    Send text, picture and audio messages.<br /><br />
 	    Learn more @ <a href="http://www.hipmob.com/">Hipmob.com</a>
@@ -162,8 +162,13 @@
       s.parentNode.insertBefore(t, s);
       })();
     </script>
+    <!-- begin olark code --><script type='text/javascript'>/*{literal}<![CDATA[*/window.olark||(function(i){var e=window,h=document,a=e.location.protocol=="https:"?"https:":"http:",g=i.name,b="load";(function(){e[g]=function(){(c.s=c.s||[]).push(arguments)};var c=e[g]._={},f=i.methods.length; while(f--){(function(j){e[g][j]=function(){e[g]("call",j,arguments)}})(i.methods[f])} c.l=i.loader;c.i=arguments.callee;c.f=setTimeout(function(){if(c.f){(new Image).src=a+"//"+c.l.replace(".js",".png")+"&"+escape(e.location.href)}c.f=null},20000);c.p={0:+new Date};c.P=function(j){c.p[j]=new Date-c.p[0]};function d(){c.P(b);e[g](b)}e.addEventListener?e.addEventListener(b,d,false):e.attachEvent("on"+b,d); (function(){function l(j){j="head";return["<",j,"></",j,"><",z,' onl'+'oad="var d=',B,";d.getElementsByTagName('head')[0].",y,"(d.",A,"('script')).",u,"='",a,"//",c.l,"'",'"',"></",z,">"].join("")}var z="body",s=h[z];if(!s){return setTimeout(arguments.callee,100)}c.P(1);var y="appendChild",A="createElement",u="src",r=h[A]("div"),G=r[y](h[A](g)),D=h[A]("iframe"),B="document",C="domain",q;r.style.display="none";s.insertBefore(r,s.firstChild).id=g;D.frameBorder="0";D.id=g+"-loader";if(/MSIE[ ]+6/.test(navigator.userAgent)){D.src="javascript:false"} D.allowTransparency="true";G[y](D);try{D.contentWindow[B].open()}catch(F){i[C]=h[C];q="javascript:var d="+B+".open();d.domain='"+h.domain+"';";D[u]=q+"void(0);"}try{var H=D.contentWindow[B];H.write(l());H.close()}catch(E){D[u]=q+'d.write("'+l().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}c.P(2)})()})()})({loader:(function(a){return "static.olark.com/jsclient/loader0.js?ts="+(a?a[1]:(+new Date))})(document.cookie.match(/olarkld=([0-9]+)/)),name:"olark",methods:["configure","extend","declare","identify"]});
+/* custom configuration goes here (www.olark.com/documentation) */
+olark.identify('7671-539-10-7109');/*]]>{/literal}*/</script>
+    <!-- end olark code -->
+
     <!--end nowspots-->
-    <script type="text/javascript">mixpanel.track('{{page.pagename}}', {'page name' : '{{page.pagename}}', 'url' : window.location.pathname});</script>
+    <script type="text/javascript">mixpanel.track('Engineering Blog: {{page.pagename}}', {'page name' : '{{page.pagename}}', 'url' : window.location.pathname});</script>
     
     <script type="text/javascript" src="//tag.perfectaudience.com/serve/501a16bddedfad0002000009.js" async="true"></script>
   </body>
