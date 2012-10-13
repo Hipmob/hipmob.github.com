@@ -27,7 +27,21 @@
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
     </script>
-    
+    <!-- start Mixpanel -->
+    <script type="text/javascript">
+      (function(c,a){window.mixpanel=a;var b,d,h,e;b=c.createElement("script");
+      b.type="text/javascript";b.async=!0;b.src=("https:"===c.location.protocol?"https:":"http:")+
+      '//cdn.mxpnl.com/libs/mixpanel-2.1.min.js';d=c.getElementsByTagName("script")[0];
+      d.parentNode.insertBefore(b,d);a._i=[];a.init=function(b,c,f){function d(a,b){
+      var c=b.split(".");2==c.length&&(a=a[c[0]],b=c[1]);a[b]=function(){a.push([b].concat(
+      Array.prototype.slice.call(arguments,0)))}}var g=a;"undefined"!==typeof f?g=a[f]=[]:
+      f="mixpanel";g.people=g.people||[];h=['disable','track','track_pageview','track_links',
+      'track_forms','register','register_once','unregister','identify','name_tag',
+      'set_config','people.identify','people.set','people.increment'];
+      for(e=0;e<h.length;e++){ d(g,h[e]); }
+                               a._i.push([b,c,f])};a.__SV=1.1;})(document,window.mixpanel||[]);
+                               mixpanel.init("799ab96a1c54c557f965641ee81f92a2");
+                               </script>
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -132,5 +146,25 @@
     <script type="text/javascript">
       jQuery(function(){ hm.setup('{{site.baseurl}}') });
     </script>
+    <!--start Nowspots-->
+    <script type="text/javascript">
+      (function() {
+      var protocol  = (("https:" === document.location.protocol) ? "https://secure" : "http://ib");
+      var segmentId = "287147";
+      
+      var t   = document.createElement("script");
+      t.type  = "text/javascript";
+      t.async = true;
+      t.src   = protocol + ".adnxs.com/seg?t=1&add=" + segmentId;
+      t.id    = "nowspots-retargeting";
+      
+      var s   = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(t, s);
+      })();
+    </script>
+    <!--end nowspots-->
+    <script type="text/javascript">mixpanel.track('{{page.pagename}}', {'page name' : '{{page.pagename}}', 'url' : window.location.pathname});</script>
+    
+    <script type="text/javascript" src="//tag.perfectaudience.com/serve/501a16bddedfad0002000009.js" async="true"></script>
   </body>
 </html>
