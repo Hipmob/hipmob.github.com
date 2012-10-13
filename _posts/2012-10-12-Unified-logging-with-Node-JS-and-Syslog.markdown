@@ -146,4 +146,8 @@ Now, this didn't particularly help us with the original problem (we didn't want 
 
 Hope it helps: if you have any questions, suggestions or comments email/call/chat with us!
 
+<span style="font-weight: bold">Update</span>: comments/discussion on [Hacker News](https://news.ycombinator.com/item?id=4649422).
+
 P.S. If you're building a mobile app and want [first-class, integrated, in-app support chat or direct messaging between users you should check out Hipmob](https://www.hipmob.com/)!
+
+ 

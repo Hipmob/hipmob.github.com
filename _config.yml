@@ -17,3 +17,6 @@ url: http://engineering.hipmob.com/
 
 # Makes pretty permalinks. See Jekyll docs for alternatives.
 permalink: pretty
+
+# Uses rdiscount
+markdown: rdiscount
