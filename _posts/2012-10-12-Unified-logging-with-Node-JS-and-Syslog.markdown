@@ -150,4 +150,4 @@ Hope it helps: if you have any questions, suggestions or comments email/call/cha
 
 P.S. If you're building a mobile app and want [first-class, integrated, in-app support chat or direct messaging between users you should check out Hipmob](https://www.hipmob.com/)!
 
- 
+ <a href="https://manage.hipmob.com/register" class="btn btn-large btn-success" style="font-weight: bold">Get started with Hipmob</a>
