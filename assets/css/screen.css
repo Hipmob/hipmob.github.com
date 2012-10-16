@@ -8,7 +8,7 @@ html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote, 
 }
 
 header.mainheader {
-    padding-top: 15px;
+    margin-top: 40px;
     padding-bottom: 10px;
     margin-bottom: 20px;
     background: url("../img/grey.png") repeat scroll 0 0 transparent;
@@ -1177,7 +1177,7 @@ navbar section
 .navbar-static-top .container,
 .navbar-fixed-top .container,
 .navbar-fixed-bottom .container {
-  width: 1170px;
+  width: 940px; 
 }
 .navbar-fixed-top {
   top: 0;
