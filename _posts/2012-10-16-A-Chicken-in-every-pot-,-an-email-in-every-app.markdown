@@ -44,4 +44,4 @@ Let us know your thoughts: if you have any questions, suggestions or comments em
 
 P.S. If you're building a mobile app and want [first-class, integrated, in-app support chat or direct messaging between users you should check out Hipmob](https://www.hipmob.com/)!
 
- <a href="https://manage.hipmob.com/register" class="btn btn-large btn-success" style="font-weight: bold">Get your app an email address with Hipmob</a>
+ <a href="https://manage.hipmob.com/register" class="btn btn-large btn-success" style="font-weight: bold">Give your app an email address with Hipmob</a>
