@@ -5,7 +5,7 @@ pagename: home
 ---
 {% for post in site.posts limit: 5 %}
 <div class="post">
-  <div class="posttitle"><h4>{{ post.title }}</h4></div>
+  <div class="posttitle"><h4><a href="{{post.url}}">{{ post.title }}</a></h4></div>
   <div class="postinfo">By {{post.author}} | {{ post.releasedate }}</div>
   <div class="entry">{{ post.excerpt }}</div>
   <span class="meta"><a href="{{site.baseurl}}{{ post.url }}">More...</a></span>
