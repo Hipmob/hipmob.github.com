@@ -181,22 +181,6 @@
     <script type="text/javascript">
       jQuery(function(){ hm.setup('{{site.baseurl}}') });
     </script>
-    <!--start Nowspots-->
-    <script type="text/javascript">
-      (function() {
-      var protocol  = (("https:" === document.location.protocol) ? "https://secure" : "http://ib");
-      var segmentId = "287147";
-      
-      var t   = document.createElement("script");
-      t.type  = "text/javascript";
-      t.async = true;
-      t.src   = protocol + ".adnxs.com/seg?t=1&add=" + segmentId;
-      t.id    = "nowspots-retargeting";
-      
-      var s   = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(t, s);
-      })();
-    </script>
     {% if page.loadscript != empty %}
     {{ page.loadscript }}
     {% endif %}
@@ -208,7 +192,13 @@ olark.identify('7671-539-10-7109');/*]]>{/literal}*/</script>
     {% endif %}
     <!--end nowspots-->
     <script type="text/javascript">mixpanel.track('Engineering Blog: {{page.pagename}}', {'page name' : '{{page.pagename}}', 'url' : window.location.pathname});</script>
-    
-    <script type="text/javascript" src="//tag.perfectaudience.com/serve/501a16bddedfad0002000009.js" async="true"></script>
-  </body>
+    <script type="text/javascript">
+      (function() {
+      window._pa = window._pa || {};
+      var pa = document.createElement('script'); pa.type = 'text/javascript'; pa.async = true;
+      pa.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + "//tag.perfectaudience.com/serve/501a16bddedfad0002000009.js";
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(pa, s);
+      })();
+    </script>
+</body>
 </html>
