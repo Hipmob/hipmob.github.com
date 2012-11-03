@@ -275,7 +275,9 @@ And we can see it on the device.
 
 And that's it. There are many other things you can do with Hipmob: see our full list of docs at <a href="https://www.hipmob.com/documentation">https://www.hipmob.com/documentation</a>, including our user-to-user chat. There are also a couple of other neat things we can do with Parse: they'll be the subject of upcoming articles.
 
-Let us know your thoughts: if you have any questions, suggestions or comments email/call/chat with us!
+Let us know your thoughts: if you have any questions, suggestions or comments email/call/chat with us! 
+
+UPDATE: comments and discussion on <a target="_blank" href="https://news.ycombinator.com/item?id=4737670"> Hacker News</a>.
 
 P.S. If you're building a mobile app and want [first-class, integrated, in-app support chat or user-to-user chat you should check out Hipmob](https://www.hipmob.com/)!
 
