@@ -10,6 +10,7 @@
     <link href="{{site.baseurl}}/assets/css/bootstrap.css" rel="stylesheet">
     <link href="{{site.baseurl}}/assets/css/prettify.css" rel="stylesheet">
     <link href="{{site.baseurl}}/assets/css/screen.css" rel="stylesheet">
+    <link href="{{site.baseurl}}/assets/css/layout.css" rel="stylesheet">
     <link rel="stylesheet" href="{{site.baseurl}}/assets/sh/styles/shCore.css" />
     <link rel="stylesheet" href="{{site.baseurl}}/assets/sh/styles/shThemeDefault.css" />
     <!-- Meta -->
@@ -48,41 +49,51 @@
     <![endif]-->
   </head>
   <body class="pbg">
-    <div class="navbar navbar-fixed-top">
+    <div class="navbar navbar-fixed-top" >
       <div class="navbar-inner" >
 	<a class="brand" href="//www.hipmob.com" style="margin-left:20px;">Hipmob</a>
 	<div class="container">
           <ul class="nav">
             <li class="active"><a href="//www.hipmob.com/index.html">Home</a></li>
-	    
             <li class=""><a href="//www.hipmob.com/pricing.html">Pricing</a></li>
-	    
             <li class="dropdown">
-              <a href="//www.hipmob.com/documentation/" style="float: left">Docs</a>
-              <a data-toggle="dropdown" class="snugdd dropdown-toggle" style="float: left"><span class="caret"></span></a>
-              <ul class="dropdown-menu pull-right">
-		<li class=""><a href="//www.hipmob.com/documentation/android.html">Android</a></li>
-		<li>
-                  <a id="iOS" href="//www.hipmob.com/documentation/ios.html">iOS</a>
-		</li>
-		<li>
-                  <a id="Peer-to-peer" href="//www.hipmob.com/documentation/peer-to-peer.html">Peer-to-peer</a>
+	      <a href="http://www.hipmob.com/documentation/" style="float: left">Docs</a>
+	      <a data-toggle="dropdown" class="dropdown-toggle" style="float: left; margin-left: -15px; padding-left: 5px"><span class="caret"></span></a>
+	      <ul class="dropdown-menu pull-right">
+                <li>
+                  <a id="Android" href="http://www.hipmob.com/documentation/android.html">Android</a>
                 </li>
                 <li>
-                  <a id="Gallery" href="//www.hipmob.com/gallery.html">App Gallery</a>
+                  <a id="iOS" href="http://www.hipmob.com/documentation/ios.html">iOS</a>
+                </li>
+                <li>
+                  <a id="Peer-to-peer" href="http://www.hipmob.com/documentation/peer-to-peer.html">Peer-to-peer</a>
+                </li>
+                <li>
+                  <a id="Gallery" href="http://www.hipmob.com/gallery.html">App Gallery</a>
                 </li>
 	      </ul>
-	    </li>
-	    
-            <li class=""><a href="http://blog.hipmob.com">Blog</a></li>
-	    
-	    <li>
-	      <a href="//hipmob.com/pricing.html#faq">FAQ</a>
+            </li>
+            <li><a href="http://blog.hipmob.com">Blog</a></li>
+	    <li><a href="//hipmob.com/pricing.html#faq">FAQ</a></li>
+	  </ul>
+	  <ul class="nav pull-right" id="rightmenu">		
+	    <li class="active">
+	      <div style="color:white;">
+		
+	      </div>
+	    </li>	      
+	    <li class="active">
+	      <div style="padding-top: 5px">
+		<a href="https://twitter.com/hipmob" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @hipmob</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.async=true;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	      </div>
 	    </li>
 	  </ul>
 	</div>
       </div>
-    </div>    
+    </div>      
+
     <header id="overview" class="mainheader">
       <div class="container">
 	<div class="row">
@@ -121,30 +132,39 @@
       </div>
     </div>
     
-    <footer class="footer" style="background-color:#4cbd50; box-shadow: inset 1px 1px 1px #888888; margin-top:30px;">
+    <footer class="footer footerbg pbdg">
       <div class="navbar-static-bottom" style="margin-bottom:-18px; height:220px; ">
         <div class="container">
           <div class="row" style="margin-top:15px;">
-            <div class="span3 footerspan" >
-              <h4>About Hipmob</h4> <br />
+            <div class="span2 offset1 footerspan" >
+              <h4 class="ptlb">About Hipmob</h4> <br />
               <a class="listtext" href="//manage.hipmob.com/register/">Sign Up</a> <br />
               <a class="listtext" href="//www.hipmob.com/pricing.html">Pricing</a> <br />
-              <a class="listtext" href="//blog.hipmob.com">Blog</a> <br />
+              <a class="listtext" href="http://hipmob.tumblr.com">Blog</a> <br />
               <a class="listtext" href="//www.hipmob.com/pricing.html#faq">FAQ</a> <br />
               <a class="listtext" href="//www.hipmob.com/gallery.html">Gallery</a> <br />
+              <a class="listtext" href="//www.hipmob.com/about.html">About Us</a> 	<br />
               <a class="listtext" href="//www.hipmob.com/privacy.html">Privacy</a> <br />
             </div>
-            <div class="span3 footerspan">
-              <h4>Developers</h4><br />
+            <div class="span2 footerspan">
+              <h4 class="ptlb">Developers</h4><br />
               <a class="listtext" href="//www.hipmob.com/documentation/ios.html">iPhone SDK</a> <br />
               <a class="listtext" href="//www.hipmob.com/documentation/ios.html#fifteenminuteipad">iPad SDK</a> <br />
               <a class="listtext" href="//www.hipmob.com/documentation/android.html">Android SDK </a> <br />
               <a class="listtext" href="//www.hipmob.com/documentation/peer-to-peer.html">Peer to Peer SDK</a> <br />
               <a class="listtext" href="//www.hipmob.com/documentation/api.html"> REST API</a> <br />
               <a class="listtext" href="//www.hipmob.com/documentation/chat-events.html">Webhooks</a> <br />
+              <a class="listtext" href="https://github.com/Hipmob">Github</a> <br />
             </div>
-            <div class="span3 footerspan">
-              <h4>Integrations</h4><br />
+<div class="span2 footerspan">
+              <h4 class="ptlb">Learn More</h4><br />
+              <a class="listtext" href="//www.hipmob.com/why">Why Hipmob?</a> <br />
+              <a class="listtext" href="//www.hipmob.com/operator">Operator Handbook</a> <br />
+              <a class="listtext" href="//www.hipmob.com/iphonedev.html">View the Demo</a> <br />
+            </div>
+
+            <div class="span2 footerspan">
+              <h4 class="ptlb">Integrations</h4><br />
               <a class="listtext" href="//www.hipmob.com/documentation/integrations/desk">Desk </a> <br />
               <a class="listtext" href="//www.hipmob.com/documentation/integrations/zendesk.html">Zendesk</a> <br />
               <a class="listtext" href="//www.hipmob.com/documentation/integrations/hipchat.html">Hipchat</a> <br />
@@ -153,10 +173,10 @@
               <a class="listtext" href="//www.hipmob.com/documentation/integrations/highrise.html">Highrise CRM</a> <br />
               <a class="listtext" href="//www.hipmob.com/documentation/integrations/zohocrm.html">Zoho CRM</a> <br />
             </div>
-            <div class="span3 " >
-              <h4> Contact Us: </h4>
-              <div class="rounded5" style=" background-color: #138c17;">
-                <h6 style="margin:25px;" class="listtext">
+            <div class="span2 " >
+              <h4 class="ptlb">Contact Us:</h4>
+              <div class="rounded5 addressbox" style=" ">
+                <h6 style="padding:10px; margin:5px;" class="listtext">
                   team@hipmob.com <br />
                   (650) 762-6513 <br />
                   An Orthogonal Labs Production<br />
@@ -179,16 +199,13 @@
     <script src="{{site.baseurl}}/assets/sh/scripts/shAutoloader.js"></script>
     <script src="{{site.baseurl}}/assets/js/hm.js"></script>
     <script type="text/javascript">
-      jQuery(function(){ hm.setup('{{site.baseurl}}') });
+      jQuery(function(){
+      hm.setup('{{site.baseurl}}');
+      SyntaxHighlighter.defaults['toolbar'] = false; SyntaxHighlighter.all();
+      });
     </script>
     {% if page.loadscript != empty %}
     {{ page.loadscript }}
-    {% endif %}
-    {% if page.disableolark == empty %}
-    <!-- begin olark code --><script type='text/javascript'>/*{literal}<![CDATA[*/window.olark||(function(i){var e=window,h=document,a=e.location.protocol=="https:"?"https:":"http:",g=i.name,b="load";(function(){e[g]=function(){(c.s=c.s||[]).push(arguments)};var c=e[g]._={},f=i.methods.length; while(f--){(function(j){e[g][j]=function(){e[g]("call",j,arguments)}})(i.methods[f])} c.l=i.loader;c.i=arguments.callee;c.f=setTimeout(function(){if(c.f){(new Image).src=a+"//"+c.l.replace(".js",".png")+"&"+escape(e.location.href)}c.f=null},20000);c.p={0:+new Date};c.P=function(j){c.p[j]=new Date-c.p[0]};function d(){c.P(b);e[g](b)}e.addEventListener?e.addEventListener(b,d,false):e.attachEvent("on"+b,d); (function(){function l(j){j="head";return["<",j,"></",j,"><",z,' onl'+'oad="var d=',B,";d.getElementsByTagName('head')[0].",y,"(d.",A,"('script')).",u,"='",a,"//",c.l,"'",'"',"></",z,">"].join("")}var z="body",s=h[z];if(!s){return setTimeout(arguments.callee,100)}c.P(1);var y="appendChild",A="createElement",u="src",r=h[A]("div"),G=r[y](h[A](g)),D=h[A]("iframe"),B="document",C="domain",q;r.style.display="none";s.insertBefore(r,s.firstChild).id=g;D.frameBorder="0";D.id=g+"-loader";if(/MSIE[ ]+6/.test(navigator.userAgent)){D.src="javascript:false"} D.allowTransparency="true";G[y](D);try{D.contentWindow[B].open()}catch(F){i[C]=h[C];q="javascript:var d="+B+".open();d.domain='"+h.domain+"';";D[u]=q+"void(0);"}try{var H=D.contentWindow[B];H.write(l());H.close()}catch(E){D[u]=q+'d.write("'+l().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}c.P(2)})()})()})({loader:(function(a){return "static.olark.com/jsclient/loader0.js?ts="+(a?a[1]:(+new Date))})(document.cookie.match(/olarkld=([0-9]+)/)),name:"olark",methods:["configure","extend","declare","identify"]});
-/* custom configuration goes here (www.olark.com/documentation) */
-olark.identify('7671-539-10-7109');/*]]>{/literal}*/</script>
-    <!-- end olark code -->
     {% endif %}
     <!--end nowspots-->
     <script type="text/javascript">mixpanel.track('Engineering Blog: {{page.pagename}}', {'page name' : '{{page.pagename}}', 'url' : window.location.pathname});</script>
@@ -200,5 +217,12 @@ olark.identify('7671-539-10-7109');/*]]>{/literal}*/</script>
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(pa, s);
       })();
     </script>
-</body>
+    <script type="text/javascript">
+      var _hmc = _hmc || [];
+      _hmc.push(['app', 'b937e4b524f84fde963da380b948c227']);
+      _hmc.push(['settings', { 'width': '300px' }]);
+      _hmc.push(['title',"Talk to us - we're real people"]);
+      (function(){ var hm = document.createElement('script'); hm.type = 'text/javascript'; hm.async = true; hm.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'hipmob.s3.amazonaws.com/hipmobchat.min.js'; var b = document.getElementsByTagName('body')[0]; b.appendChild(hm); })();
+    </script>
+  </body>
 </html>

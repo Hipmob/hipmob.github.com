@@ -1,0 +1,100 @@
+/* GENERAL: =general
+-----------------------------------------------------------------------------------------*/
+html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote, pre, form, fieldset, table, th, td { margin: 0; padding: 0; }
+
+.pbg {
+    background: url("../img/plaster.png") repeat scroll 0 0 transparent;
+    font-family: "Open Sans",Lucida Grande,Verdana,Arial,Helvetica,sans-serif !important;
+}
+
+header.mainheader {
+    margin-top: 40px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    background: url("../img/grey.png") repeat scroll 0 0 transparent;
+}
+
+header a,a:hover,a:visited,a:active {
+    text-decoration: none
+}
+
+div.post {
+    border: 1px solid #DDDDDD;
+    padding: 10px 10px;
+    margin-bottom: 15px
+}
+
+div.postcontent {
+    border: 1px solid #DDDDDD;
+    padding: 10px 10px;
+    margin-bottom: 15px;
+}
+
+div.postcontent div.entry p {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+div.postcontent div.entry h4 {
+    margin-bottom: 6px;
+}
+
+div.postcontent div.entry ol {
+    margin-left: 25px;
+}
+
+div.postcontent h3.title {
+    margin-bottom: 15px
+}
+div.postcontent div.postinfo {
+    padding-bottom: 1px;
+    border-bottom: 1px solid #dedede
+}
+div.postcontent div.entry{
+    margin-top: 15px;
+}
+div.post div.posttitle {
+    margin-bottom: 8px;
+}
+div.post div.postinfo {
+    padding-bottom: 1px;
+    border-bottom: 1px solid #dedede
+}
+div.post div.entry {
+    margin-top: 4px;
+    margin-bottom: 6px;
+}
+
+div.sidebardivider {
+    border-bottom: 1px solid #303030;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.sidebarblock {
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.desc {
+    margin: 0px;
+}
+
+div#contentblock {
+    min-height: 500px;
+}
+
+.shopifyhow
+{
+text-align:center;
+height:160px;
+color:#3E545C;
+font-size:90px;
+background-image:url('/images/plaster.png'); 
+background-repeat:repeat;
+box-shadow: 0px 1px 1px #888888;
+margin-top:20px;
+}
+
+.syntaxhighlighter { padding-bottom: 1px; }
