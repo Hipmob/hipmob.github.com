@@ -10,7 +10,7 @@ pagename: howtoaddlivechattoyourparsepoweredappwithhipmob
 
 [Hipmob](https://www.hipmob.com "Hipmob") provides live chat; it's as simple as downloading our libraries for iOS and Android, integrating them into your apps with an app key we provide and then you can talk to your users in real time, solve their problems, and make them happy. No servers to setup, no new code to write, just a conversation with your users. In the process, we're trying to make it as simple as possible to talk to your customers, whether you're there when they have a problem or you're away.
 
-Backend-as-a-Service providers are becoming more and more powerful: <a target="_blank" href="https://www.parse.com">Parse</a> is one of the more popular providers, and with support for both user authentication and push notifications it seemed like a natural fit for integration. Tens of thousands of apps leverage Parse's services: being able to instantly add chat to all of those apps seemed like a great idea. A couple of hours later, here we are!
+Backend-as-a-Service providers are becoming more and more powerful: <a target="_blank" href="https://www.parse.com">Parse</a> is very popular, as well as a fellow YC company, and with support for both user authentication and push notifications it seemed like a natural fit for integration. Tens of thousands of apps leverage Parse's services: being able to instantly add chat to all of those apps seemed like a great idea. A couple of hours later, here we are!
 
 ### Mission
 
@@ -145,17 +145,15 @@ getApplication();
 ParseInstallation pi = ParseInstallation.getCurrentInstallation();
 String id = pi.getString("hipmobId");
 if(id == null){
-	String uid = ParseUser.getCurrentUser().getObjectId();
-	if(uid == null){
-		try{
-			ParseUser.getCurrentUser().save();
-			pi.put("hipmobId", ParseUser.getCurrentUser().getObjectId());
-			pi.save();
-		}catch(Exception e1){
-			android.util.Log.v("ToDoListActivity", 
-			"Exception saving installation id ["+e1.getMessage()+"]", e1);
-		}
-	}
+      String uid = ParseUser.getCurrentUser().getObjectId();
+      try{
+		if(uid == null) ParseUser.getCurrentUser().save();
+		pi.put("hipmobId", ParseUser.getCurrentUser().getObjectId());
+		pi.save();
+      }catch(Exception e1){
+	android.util.Log.v("ToDoListActivity", 
+	"Exception saving installation id ["+e1.getMessage()+"]", e1);
+      }
 }
 </pre>
 
@@ -186,7 +184,7 @@ And now the next time the user opens the chat window we'll get the <code>hipmobI
 
 Parse uses a custom push notification system on Android (NOT Google Cloud Messaging): to configure it we just need to add the <code>Service</code> and <code>Receiver</code> to the AndroidManifest.xml file and then register for push notifications.
 
-First the manifest changes: once add this just before the closing <code>&lt;/application&gt;</code> tag.
+First the manifest changes: once again add these lines just before the closing <code>&lt;/application&gt;</code> tag.
 
 <pre class="brush: xml">
 &lt;service android:name="com.parse.PushService" /&gt;
@@ -275,11 +273,11 @@ And we can see it on the device.
 
 #### That's all folks
 
-And that's it. There are many other things you can do with Hipmob: see our full list of docs at <a href="https://www.hipmob.com/documentation">https://www.hipmob.com/documentation</a>, including our user chat (for chatting between users). There are also a couple of other neat things we can do with Parse: they'll be the subject of upcoming articles.
+And that's it. There are many other things you can do with Hipmob: see our full list of docs at <a href="https://www.hipmob.com/documentation">https://www.hipmob.com/documentation</a>, including our user-to-user chat. There are also a couple of other neat things we can do with Parse: they'll be the subject of upcoming articles.
 
 Let us know your thoughts: if you have any questions, suggestions or comments email/call/chat with us!
 
-P.S. If you're building a mobile app and want [first-class, integrated, in-app support chat or direct messaging between users you should check out Hipmob](https://www.hipmob.com/)!
+P.S. If you're building a mobile app and want [first-class, integrated, in-app support chat or user-to-user chat you should check out Hipmob](https://www.hipmob.com/)!
 
 The full documentation on Hipmob's Parse integration: <a href="https://www.hipmob.com/documentation/integrations/parse.html" target="_blank" class="btn btn-info">View the documentation</a>
 
