@@ -20,6 +20,8 @@ Couple demonstrates Hipmob's real-time user-to-user functionality, including use
 
 We've open sourced the code used for the <a href="https://github.com/Hipmob/couple">Android app</a> and the <a href="https://github.com/Hipmob/couple-server">Node server</a> (hosted on Heroku) and hope it can be useful in building your own user-to-user applications.
 
+<span style="font-weight: bold">Update</span>: comments/discussion on [Hacker News](https://news.ycombinator.com/item?id=4795611).
+
 P.S. If you're building a mobile app and want [first-class, integrated, in-app support chat or user-to-user chat you should check out Hipmob](https://www.hipmob.com/)!
 
 <a href="https://manage.hipmob.com/register" class="btn btn-large btn-success" style="font-weight: bold">Get Started with Hipmob</a>
