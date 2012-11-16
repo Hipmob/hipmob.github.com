@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Couple: a user-to-user chat app built on Hipmob"
+title: "Couple: an open source user-to-user chat app built on Hipmob"
 excerpt: "Hipmob allows you to add live support and real-time user-to-user chat to your Android or iOS mobile app (or web application) in less than 15 minutes. Couple is a simple user-to-user chat app built on Hipmob (and open-sourced) that discusses the concepts behind the Hipmob platform and shows how to use Hipmob's user-to-user and push notification functionality in your application."
 author: "Femi Omojola"
 releasedate: "November 16, 2012"
-pagename: coupleausertouserchatappbuiltonhipmob
+pagename: coupleanopensourceusertouserchatappbuiltonhipmob
 ---
 <span style="font-weight: bold">TL;DR</span>: <span style="font-style: italic">Hipmob allows you to add live support chat and real-time user-to-user chat to your Android or iOS mobile app in less than 15 minutes. <a href="https://www.hipmob.com/documentation/tutorials/couple.html">Couple</a> is a user-to-user chat application built on top of Hipmob's platform.</span>
 
