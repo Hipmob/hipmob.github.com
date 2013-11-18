@@ -12,6 +12,8 @@ description: Hipmob Engineering's blog.
 # The URL of your actual domain. This will be used to make absolute links in the RSS feed.
 url: http://engineering.hipmob.com/
 
+baseurl: http://engineering.hipmob.com/
+
 # Continue compiling even if there are errors. Keep it true, unless troubleshooting.
 # auto: true
 
