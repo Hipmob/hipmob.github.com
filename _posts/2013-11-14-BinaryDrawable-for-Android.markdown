@@ -6,7 +6,9 @@ author: "Femi Omojola"
 releasedate: "November 14, 2013"
 pagename: binarydrawableforandroid
 ---
-<span style="font-weight: bold">TL;DR</span>: <span style="font-style: italic">Customers Expect Great Support Even Inside Your Mobile App. Hipmob provides a helpdesk and live chat for mobile apps. Increase sales, convert more subscribers, and grow customer loyalty. <a href="https://github.com/Hipmob/binarydrawable">BinaryDrawable</a> is a simple library to let you convert image files into Java source files for the Android platform.</span>
+<span style="font-style: italic">Customers Expect Great Support Even Inside Your Mobile App. Hipmob provides a helpdesk and live chat for mobile apps. Increase sales, convert more subscribers, and grow customer loyalty. <a href="https://manage.hipmob.com/register" class="btn btn-success" style="font-weight: bold">Check it out</a></span>
+
+<span style="font-weight: bold">TL;DR</span>: <a href="https://github.com/Hipmob/binarydrawable">BinaryDrawable</a> is a simple library to let you convert image files into Java source files for the Android platform.</span>
 
 [Hipmob](https://www.hipmob.com "Hipmob") provides an SDK for helpdesk and real-time customer support that can be added to any mobile app; it's as simple as downloading our libraries for iOS or Android, integrating them into your apps with an app key we provide and then your app has a help desk and live chat (so your users can find help for any issues they are having or talk to you without having to leave your app). No server setup or code to write, just real time communication that scales with you.
 
