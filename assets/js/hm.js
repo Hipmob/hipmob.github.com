@@ -46,3 +46,35 @@ var hm = hm || (function($){
     };
     return self;
 })(jQuery);
+
+function gotoLogin()
+{
+    document.location = "https://manage.hipmob.com/";
+}
+
+/*
+jQuery(function() {
+    var $window = jQuery(window);
+    var $mainbar = jQuery('.mainbar').eq(0);
+    var isBig = true;
+    var scrollTop = 0;
+    
+    $window.scroll(function() {
+        scrollTop = $window.scrollTop();
+        
+        if (scrollTop > 65) {
+            if (isBig) {
+		$mainbar.css('height', '77px');
+		$mainbar.css('padding-top', '22px');
+		isBig = false;
+            }
+        } else if (scrollTop < 55) {
+            if (!isBig) {
+		$mainbar.css('height', '105px');
+		$mainbar.css('padding-top', '41px');
+		isBig = true;
+            }
+        }
+    });
+});
+*/

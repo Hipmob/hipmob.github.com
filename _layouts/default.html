@@ -4,12 +4,19 @@
     <meta charset="utf-8">
     <title>{% if page.title %} {{ page.title }} {% endif %} | Engineering @ Hipmob</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+
+    <meta name="description" content="Talk to mobile users inside your app. Used by m-commerce, SAAS and Subscription services, and mobile hardware companies to increase retention and in-app sales, and get fewer support tickets. Help users help themselves with in-app helpdesk, use live chat to answer questions immediately, and push notifications bring users back.">
+    
+    <meta name="keywords" content="real-time, live chat, cobrowsing, screensharing, customer support, support, helpdesk, QA, sales, demos, demonstrations push notifications, push messaging, push alerts, push">
+    
+    <link rel="icon" type="image/png" href="http://www.hipmob.com/images/bubblechart.png">
+
     <!-- Styles -->
     <link href="{{site.baseurl}}/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="{{site.baseurl}}/assets/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="{{site.baseurl}}/assets/css/prettify.css" rel="stylesheet">
-    <link href="{{site.baseurl}}/assets/css/screen.css" rel="stylesheet">
+    <link href="{{site.baseurl}}/assets/css/css.css" rel="stylesheet">
+    <link href="{{site.baseurl}}/assets/css/remix.css" rel="stylesheet">
     <link href="{{site.baseurl}}/assets/css/layout.css" rel="stylesheet">
     <link rel="stylesheet" href="{{site.baseurl}}/assets/sh/styles/shCore.css" />
     <link rel="stylesheet" href="{{site.baseurl}}/assets/sh/styles/shThemeDefault.css" />
@@ -48,143 +55,115 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
-  <body class="pbg">
-    <div class="navbar navbar-fixed-top" >
-      <div class="navbar-inner" >
-	<a class="brand" href="//www.hipmob.com" style="margin-left:20px;">Hipmob</a>
-	<div class="container">
-          <ul class="nav">
-            <li class="active"><a href="//www.hipmob.com/index.html">Home</a></li>
-            <li class=""><a href="//www.hipmob.com/pricing.html">Pricing</a></li>
-            <li class="dropdown">
-	      <a href="http://www.hipmob.com/documentation/" style="float: left">Docs</a>
-	      <a data-toggle="dropdown" class="dropdown-toggle" style="float: left; margin-left: -15px; padding-left: 5px"><span class="caret"></span></a>
-	      <ul class="dropdown-menu pull-right">
-                <li>
-                  <a id="Android" href="http://www.hipmob.com/documentation/android.html">Android</a>
-                </li>
-                <li>
-                  <a id="iOS" href="http://www.hipmob.com/documentation/ios.html">iOS</a>
-                </li>
-                <li>
-                  <a id="Peer-to-peer" href="http://www.hipmob.com/documentation/peer-to-peer.html">Peer-to-peer</a>
-                </li>
-                <li>
-                  <a id="Gallery" href="http://www.hipmob.com/gallery.html">App Gallery</a>
-                </li>
-	      </ul>
-            </li>
-            <li><a href="http://blog.hipmob.com">Blog</a></li>
-	    <li><a href="//hipmob.com/pricing.html#faq">FAQ</a></li>
-	  </ul>
-	  <ul class="nav pull-right" id="rightmenu">		
-	    <li class="active">
-	      <div style="color:white;">
-		
-	      </div>
-	    </li>	      
-	    <li class="active">
-	      <div style="padding-top: 5px">
-		<a href="https://twitter.com/hipmob" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @hipmob</a>
-		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.async=true;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-	      </div>
-	    </li>
+  <body class="bodynav">
+    <div class="navbar navbar-fixed-top mainbar2" style="height: 50px">
+      <div class="navbar-alert">
+  	<div class="container" style="text-align: left">
+	  <a class="brand" href="http://www.hipmob.com/"><img style="vertical-align: middle" src="{{site.baseurl}}/assets/img/newbrand.png"></a><a href="{{site.baseurl}}"><h3 style="display: inline;margin-left: 10px;text-transform: uppercase">Engineering</h3></a>
+	  <ul class="nav pull-right">
+	    <li class="alertactive"><a style="padding-top:0px;" href="http://www.hipmob.com/index.html">Home</a></li>
+	    <li class="inactive"><a style="padding-top:0px;" href="http://www.hipmob.com/pricing.html">Pricing</a></li>
+	    <li class="inactive"><a style="padding-top:0px;" href="http://www.hipmob.com/documentation/index.html">Docs</a></li>
+	    <li class="inactive"><a style="padding-top:0px;" href="http://blog.hipmob.com/">Blog</a></li>
+	    <li><button class="greenbutton" onclick="gotoLogin();">Log In</button></li>
 	  </ul>
 	</div>
       </div>
-    </div>      
+    </div>
 
-    <header id="overview" class="mainheader">
-      <div class="container">
-	<div class="row">
-	  <div class="span8">
-	    <h1><img src="{{site.baseurl}}/assets/img/logo.png" style="margin-right: 10px"/><a href="https://www.hipmob.com/">Hipmob</a></h1>
-	    <p class="lead"><a href="{{site.url}}">Engineering Blog</a></p>
-	  </div>
-	  <div class="span4">
-	  </div>
-	</div>
-    </header>
-    <div class="container" id="contentblock">
+    <div class="container contentrow" id="contentblock">
       <div class="row">
 	<div class="span9">
 	  {{ content }}
 	</div>
 	<div class="span3 sidebar">
 	  <div class="sidebarblock">
-	    <h5 class="desc">Live chat on mobile.</h5><br />
+	    <h5 class="desc">Help desk and live chat on mobile.</h5><br />
 	    Keep your users on your mobile website, and in your iPhone/iPad or Android app.<br /><br />
 	    iOS/Android native libraries, customizable to match your application's user interface.<br /><br />
+	    Let users search your helpdesk from inside your app.<br /><br />
+	    Show contextual help from any screen.<br /><br />
 	    Send text, picture and audio messages.<br /><br />
 	    Learn more @ <a href="http://www.hipmob.com/">Hipmob.com</a>
 	    <div class="sidebardivider"></div>
 	    <div style="padding-top:5px;">
-              <a href="https://twitter.com/hipmob" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @hipmob</a>
-              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	      <a href="https://twitter.com/hipmob" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @hipmob</a>
+	      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 	    </div>
 	  </div>
 	</div>
       </div>
     </div>
-    <div class="container" style="margin-top: 30px">
+    
+    <div class="container" style="margin-top: 30px; font-size: 14px">
       <div class="row">
-	<div class="offset12 span3"><small>&copy; 2012 Orthogonal Labs, Inc.</small></div>
+	<div class="span12"><small>&copy; 2012 - 2013 Orthogonal Labs, Inc.</small></div>
       </div>
     </div>
     
-    <footer class="footer footerbg pbdg">
-      <div class="navbar-static-bottom" style="margin-bottom:-18px; height:220px; ">
-        <div class="container">
-          <div class="row" style="margin-top:15px;">
-            <div class="span2 offset1 footerspan" >
-              <h4 class="ptlb">About Hipmob</h4> <br />
-              <a class="listtext" href="//manage.hipmob.com/register/">Sign Up</a> <br />
-              <a class="listtext" href="//www.hipmob.com/pricing.html">Pricing</a> <br />
-              <a class="listtext" href="http://hipmob.tumblr.com">Blog</a> <br />
-              <a class="listtext" href="//www.hipmob.com/pricing.html#faq">FAQ</a> <br />
-              <a class="listtext" href="//www.hipmob.com/gallery.html">Gallery</a> <br />
-              <a class="listtext" href="//www.hipmob.com/about.html">About Us</a> 	<br />
-              <a class="listtext" href="//www.hipmob.com/privacy.html">Privacy</a> <br />
-            </div>
-            <div class="span2 footerspan">
-              <h4 class="ptlb">Developers</h4><br />
-              <a class="listtext" href="//www.hipmob.com/documentation/ios.html">iPhone SDK</a> <br />
-              <a class="listtext" href="//www.hipmob.com/documentation/ios.html#fifteenminuteipad">iPad SDK</a> <br />
-              <a class="listtext" href="//www.hipmob.com/documentation/android.html">Android SDK </a> <br />
-              <a class="listtext" href="//www.hipmob.com/documentation/peer-to-peer.html">Peer to Peer SDK</a> <br />
-              <a class="listtext" href="//www.hipmob.com/documentation/api.html"> REST API</a> <br />
-              <a class="listtext" href="//www.hipmob.com/documentation/chat-events.html">Webhooks</a> <br />
-              <a class="listtext" href="https://github.com/Hipmob">Github</a> <br />
-            </div>
-<div class="span2 footerspan">
-              <h4 class="ptlb">Learn More</h4><br />
-              <a class="listtext" href="//www.hipmob.com/why">Why Hipmob?</a> <br />
-              <a class="listtext" href="//www.hipmob.com/operator">Operator Handbook</a> <br />
-              <a class="listtext" href="//www.hipmob.com/iphonedev.html">View the Demo</a> <br />
-            </div>
+    <footer class="remixfooter navbar-static-bottom" style="padding:25px 0px 35px 0px; min-height:220px; "> 
+      <div class="container">
+	<div class="row" style="margin-top:15px;">
+	  <div class="span2 offset1 footerspan1">
+            <h4 class="ptlb1 tinycaps">About Hipmob</h4>
+            <a class="listtext1" href="http://manage.hipmob.com/register/">Sign Up</a> <br>
+            <a class="listtext1" href="http://www.hipmob.com/pricing.html">Pricing</a> <br>
+            <a class="listtext1" href="http://blog.hipmob.com/">Blog</a> <br>
+            <a class="listtext1" href="http://www.hipmob.com/pricing.html#faq">FAQ</a> <br>
+            <a class="listtext1" href="http://www.hipmob.com/privacy.html">Privacy</a> <br>
+            <a class="listtext1" href="http://www.hipmob.com/terms.html">Terms of Service</a> 
+            
+	  </div>
 
-            <div class="span2 footerspan">
-              <h4 class="ptlb">Integrations</h4><br />
-              <a class="listtext" href="//www.hipmob.com/documentation/integrations/desk">Desk </a> <br />
-              <a class="listtext" href="//www.hipmob.com/documentation/integrations/zendesk.html">Zendesk</a> <br />
-              <a class="listtext" href="//www.hipmob.com/documentation/integrations/hipchat.html">Hipchat</a> <br />
-              <a class="listtext" href="//www.hipmob.com/documentation/integrations/campfire.html">Campfire</a> <br />
-              <a class="listtext" href="//www.hipmob.com/documentation/integrations/salesforce.html">Salesforce CRM</a> <br />
-              <a class="listtext" href="//www.hipmob.com/documentation/integrations/highrise.html">Highrise CRM</a> <br />
-              <a class="listtext" href="//www.hipmob.com/documentation/integrations/zohocrm.html">Zoho CRM</a> <br />
+	  <div class="span2 footerspan1">
+            <h4 class="ptlb1 tinycaps">Customers</h4>
+	    <a class="listtext1" href="http://www.hipmob.com/gallery.html">Gallery</a> <br>
+	    <a class="listtext1" href="http://www.hipmob.com/library.html"> Resource Library</a> <br>
+	    <a class="listtext1" href="http://hipmob.desk.com/">Help Center</a> <br>
+	    <a class="listtext1" href="http://www.hipmob.com/tour">Take The Tour</a> <br>
+	    <a class="listtext1" href="http://www.hipmob.com/testimonials">Testimonials</a> <br>
+	    <a class="listtext1" href="http://www.hipmob.com/iphonedev.html">View the Demo</a> <br>
+            <a class="listtext1" href="http://www.hipmob.com/operator">Operator Handbook</a> <br>
+	  </div>
+
+	  <div class="span2 footerspan1">
+            <h4 class="ptlb1 tinycaps">Developers</h4>
+            <a class="listtext1" href="http://www.hipmob.com/documentation/ios.html">iPhone SDK</a> <br>
+            <a class="listtext1" href="http://www.hipmob.com/documentation/ios.html#fifteenminuteipad">iPad SDK</a> <br>
+            <a class="listtext1" href="http://www.hipmob.com/documentation/android.html">Android SDK </a> <br>
+            <a class="listtext1" href="http://www.hipmob.com/documentation/peer-to-peer.html">Peer to Peer SDK</a> <br>
+            <a class="listtext1" href="http://www.hipmob.com/documentation/api.html"> REST API</a> <br>
+            <a class="listtext1" href="http://www.hipmob.com/documentation/chat-events.html">Webhooks</a> <br>
+            <a class="listtext1" href="https://github.com/Hipmob">Github</a> <br>
+
+	  </div>
+
+	  <div class="span2 footerspan1">
+            <h4 class="ptlb1 tinycaps">Integrations</h4>
+            <a class="listtext1" href="http://www.hipmob.com/documentation/integrations/desk">Desk </a> <br>
+            <a class="listtext1" href="http://www.hipmob.com/documentation/integrations/zendesk.html">Zendesk</a> <br>
+            <a class="listtext1" href="http://www.hipmob.com/documentation/integrations/hipchat.html">Hipchat</a> <br>
+            <a class="listtext1" href="http://www.hipmob.com/documentation/integrations/campfire.html">Campfire</a> <br>
+            <a class="listtext1" href="http://www.hipmob.com/documentation/integrations/salesforce.html">Salesforce CRM</a> <br>
+            <a class="listtext1" href="http://www.hipmob.com/documentation/integrations/highrise.html">Highrise CRM</a> <br>
+            <a class="listtext1" href="http://www.hipmob.com/documentation/integrations/zohocrm.html">Zoho CRM</a> <br>
+
+	  </div>
+
+
+
+	  <div class="span2 ">
+            <h4 class="ptlb1 tinycaps">Contact Us:</h4> 
+            <div class="rounded5 addressbox" style=" ">
+
+	      <h6 style="padding:0px 10px;" class="listtext1">
+		team@hipmob.com <br>
+		(650) 762-6513 <br><br>
+		An Orthogonal Labs Production<br>
+	      </h6>
             </div>
-            <div class="span2 " >
-              <h4 class="ptlb">Contact Us:</h4>
-              <div class="rounded5 addressbox" style=" ">
-                <h6 style="padding:10px; margin:5px;" class="listtext">
-                  team@hipmob.com <br />
-                  (650) 762-6513 <br />
-                  An Orthogonal Labs Production<br />
-                </h6>
-              </div>
-            </div>
-          </div>
-        </div>
+	  </div>
+	</div>
       </div>
     </footer>
 

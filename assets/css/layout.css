@@ -1,7 +1,3 @@
-/* GENERAL: =general
------------------------------------------------------------------------------------------*/
-html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote, pre, form, fieldset, table, th, td { margin: 0; padding: 0; }
-
 .pbg {
     background: url("../img/plaster.png") repeat scroll 0 0 transparent;
     font-family: "Open Sans",Lucida Grande,Verdana,Arial,Helvetica,sans-serif !important;
@@ -19,13 +15,13 @@ header a,a:hover,a:visited,a:active {
 }
 
 div.post {
-    border: 1px solid #DDDDDD;
+    border-bottom-width: 1px solid #dedede;
     padding: 10px 10px;
     margin-bottom: 15px
 }
 
 div.postcontent {
-    border: 1px solid #DDDDDD;
+    border: 0px solid #DDDDDD;
     padding: 10px 10px;
     margin-bottom: 15px;
 }
@@ -83,6 +79,7 @@ div.sidebardivider {
 
 div#contentblock {
     min-height: 500px;
+    font-size: 14px;
 }
 
 .shopifyhow
