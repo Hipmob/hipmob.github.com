@@ -12,14 +12,14 @@
     <link rel="icon" type="image/png" href="http://www.hipmob.com/images/bubblechart.png">
 
     <!-- Styles -->
-    <link href="{{site.baseurl}}/assets/css/bootstrap.css" rel="stylesheet">
-    <link href="{{site.baseurl}}/assets/css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="{{site.baseurl}}/assets/css/prettify.css" rel="stylesheet">
-    <link href="{{site.baseurl}}/assets/css/css.css" rel="stylesheet">
-    <link href="{{site.baseurl}}/assets/css/remix.css" rel="stylesheet">
-    <link href="{{site.baseurl}}/assets/css/layout.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{site.baseurl}}/assets/sh/styles/shCore.css" />
-    <link rel="stylesheet" href="{{site.baseurl}}/assets/sh/styles/shThemeDefault.css" />
+    <link href="{{site.baseurl}}assets/css/bootstrap.css" rel="stylesheet">
+    <link href="{{site.baseurl}}assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="{{site.baseurl}}assets/css/prettify.css" rel="stylesheet">
+    <link href="{{site.baseurl}}assets/css/css.css" rel="stylesheet">
+    <link href="{{site.baseurl}}assets/css/remix.css" rel="stylesheet">
+    <link href="{{site.baseurl}}assets/css/layout.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{site.baseurl}}assets/sh/styles/shCore.css" />
+    <link rel="stylesheet" href="{{site.baseurl}}assets/sh/styles/shThemeDefault.css" />
     <!-- Meta -->
     <meta http-equiv="content-type" content="text/xhtml; charset=utf-8" />
 
@@ -52,14 +52,14 @@
                                </script>
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-      <script src="{{site.baseurl}}/assets/js/html5.js"></script>
+      <script src="{{site.baseurl}}assets/js/html5.js"></script>
     <![endif]-->
   </head>
   <body class="bodynav">
     <div class="navbar navbar-fixed-top mainbar2" style="height: 50px">
       <div class="navbar-alert">
   	<div class="container" style="text-align: left">
-	  <a class="brand" href="http://www.hipmob.com/"><img style="vertical-align: middle" src="{{site.baseurl}}/assets/img/newbrand.png"></a><a href="{{site.baseurl}}"><h3 style="display: inline;margin-left: 10px;text-transform: uppercase">Engineering</h3></a>
+	  <a class="brand" href="http://www.hipmob.com/"><img style="vertical-align: middle" src="{{site.baseurl}}assets/img/newbrand.png"></a><a href="{{site.baseurl}}"><h3 style="display: inline;margin-left: 10px;text-transform: uppercase">Engineering</h3></a>
 	  <ul class="nav pull-right">
 	    <li class="alertactive"><a style="padding-top:0px;" href="http://www.hipmob.com/index.html">Home</a></li>
 	    <li class="inactive"><a style="padding-top:0px;" href="http://www.hipmob.com/pricing.html">Pricing</a></li>
@@ -170,13 +170,13 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="{{site.baseurl}}/assets/js/jquery.min.js"></script>
-    <script src="{{site.baseurl}}/assets/js/bootstrap.js"></script>
-    <script src="{{site.baseurl}}/assets/js/prettify.js"></script>
-    <script src="{{site.baseurl}}/assets/js/vkbeautify.js"></script>
-    <script src="{{site.baseurl}}/assets/sh/scripts/shCore.js"></script>
-    <script src="{{site.baseurl}}/assets/sh/scripts/shAutoloader.js"></script>
-    <script src="{{site.baseurl}}/assets/js/hm.js"></script>
+    <script src="{{site.baseurl}}assets/js/jquery.min.js"></script>
+    <script src="{{site.baseurl}}assets/js/bootstrap.js"></script>
+    <script src="{{site.baseurl}}assets/js/prettify.js"></script>
+    <script src="{{site.baseurl}}assets/js/vkbeautify.js"></script>
+    <script src="{{site.baseurl}}assets/sh/scripts/shCore.js"></script>
+    <script src="{{site.baseurl}}assets/sh/scripts/shAutoloader.js"></script>
+    <script src="{{site.baseurl}}assets/js/hm.js"></script>
     <script type="text/javascript">
       jQuery(function(){
       hm.setup('{{site.baseurl}}');
@@ -199,9 +199,29 @@
     <script type="text/javascript">
       var _hmc = _hmc || [];
       _hmc.push(['app', 'b937e4b524f84fde963da380b948c227']);
-      _hmc.push(['settings', { 'width': '300px' }]);
-      _hmc.push(['title',"Talk to us - we're real people"]);
-      (function(){ var hm = document.createElement('script'); hm.type = 'text/javascript'; hm.async = true; hm.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'hipmob.s3.amazonaws.com/hipmobchat.min.js'; var b = document.getElementsByTagName('body')[0]; b.appendChild(hm); })();
+      _hmc.push(['title','Talk to us']);
+      _hmc.push(['tab', { 'background-color': '#222222', 'color': '#FFFFFF', 'font-size': '9px', 'font-weight': 'bold' }]);
+      _hmc.push(['settings', { 'border-color': '#222222', 'height': '350px', 'width': '250px' }]);
+      _hmc.push(['statusicons', { 
+      'online': '//www.hipmob.com/themes/gmail/online.png', 
+      'offline': '//www.hipmob.com/themes/gmail/offline.png', 
+      'disconnected': '//www.hipmob.com/themes/gmail/disconnected.png' }]);
+      _hmc.push(['controlicons', { 
+      'open': '//www.hipmob.com/themes/gmail/open.png', 
+      'close': '//www.hipmob.com/themes/gmail/close.png' }]);
+      _hmc.push(['crossdomain', function(chat, app, sid){
+      var bits = window.location.hostname.split(".");
+      while(bits.length > 2) bits.shift();
+      chat.cookie('_hipmob_sid_'+app, sid, { expires: false, path: '/', domain: bits.join(".") });
+      }, function(chat, app){
+        return chat.cookie('_hipmob_sid_'+app);
+      }]);
+      (function() {
+      var hm = document.createElement('script'); hm.type = 'text/javascript';
+      hm.async = true;
+      hm.src = 'https://hipmob.s3.amazonaws.com/hipmobchat.min.js';
+      var b = document.getElementsByTagName('script')[0]; b.parentNode.insertBefore(hm, b);
+      })();
     </script>
   </body>
 </html>
