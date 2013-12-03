@@ -8,6 +8,7 @@ description: Hipmob Engineering's blog.
 # Note - if you enable this, and attempt to view your site locally you have to use the baseurl in your local path.
 # Example, you must use http://localhost:4000/path/to/blog
 baseurl: http://engineering.hipmob.com/
+#baseurl: /
 
 # The URL of your actual domain. This will be used to make absolute links in the RSS feed.
 url: http://engineering.hipmob.com/
@@ -20,3 +21,6 @@ permalink: pretty
 
 # Uses rdiscount
 markdown: rdiscount
+
+# hide future posts
+future: false
