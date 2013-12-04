@@ -30,7 +30,7 @@ Usage is simple: just pass the <code>File</code> or <code>InputStream</code> int
 GifAnimationDrawable anim = new GifAnimationDrawable(getResources().openRawResource(R.raw.anim1));
 ```
 
-The source code is available at <a href="https://github.com/Hipmob/gifanimationdrawable">https://github.com/Hipmob/gifanimationdrawable</a>: take a look and see if its useful. For the folks who just want to get cracking there's a handy jar file you can just add to your project.
+The source code is available at <a href="https://github.com/Hipmob/gifanimateddrawable">https://github.com/Hipmob/gifanimateddrawable</a>: take a look and see if its useful. For the folks who just want to get cracking there's a handy jar file you can just add to your project.
 
 P.S. If you're building a mobile app and want [great support for your app with helpdesk search, contextual help and live chat you should check out Hipmob](https://www.hipmob.com/)!
 
